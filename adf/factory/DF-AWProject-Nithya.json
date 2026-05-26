@@ -1,0 +1,15 @@
+{
+	"name": "DF-AWProject-Nithya",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1a60d6b1-590e-4134-a421-1f552e33781b",
+		"tenantId": "03014579-700a-4a89-bf92-95ca14660023"
+	}
+}

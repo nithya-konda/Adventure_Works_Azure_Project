@@ -1,0 +1,31 @@
+{
+	"name": "DS_Git_Dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "httpLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"P_rel_value": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().P_rel_value",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
